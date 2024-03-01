@@ -1,0 +1,12 @@
+,batch_per_worker,wallclock_time,steps_per_second,simulator,parallellisation,model,parition,control_inputs,rendering
+0,64,25.926517486572266,2468.5151036249495,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+1,64,22.368242979049683,5722.3984968281175,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+2,64,20.54306674003601,12461.625288939273,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+3,64,22.327378273010254,22931.487689215846,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+4,64,22.89811635017395,44719.83565548705,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+5,64,24.393672704696655,83956.19736283855,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+6,64,24.595213890075684,166536.46592814388,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+7,64,27.31980037689209,299855.77811648435,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+8,64,35.304956912994385,464070.8113701078,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+9,64,59.86026167869568,547408.2317896408,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none
+10,64,104.17745542526245,629080.4448282568,mujoco,synchronized_multiprocessing,humanoid_mjx,local,0.01*torch.randn,none

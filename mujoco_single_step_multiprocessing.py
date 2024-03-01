@@ -10,7 +10,7 @@ import torch
 def load_model_to_global(batch_per_worker=32):
     global m
     global d
-    m = mujoco.MjModel.from_xml_path('humanoid_mjx.xml')
+    m = mujoco.MjModel.from_xml_path('rodent.xml')
     d = [mujoco.MjData(m) for i in range(batch_per_worker)]
 
 def take_step(control_actuations):
@@ -28,16 +28,18 @@ def take_step(control_actuations):
         output[i, qpos.size:] = qvel
     return output
 
-def time_multicore(batch_per_worker=32, n_workers=1, control_size=21):
+def time_multicore(batch_per_worker=32, n_workers=1, control_size=30):
     s_time = time.time()
     with multiprocessing.Pool(n_workers, load_model_to_global, (batch_per_worker,)) as p:
         for t in range(1000):
             input_cuda = 0.01*torch.randn((n_workers, batch_per_worker, control_size), device='cuda')
             control_input = input_cuda.cpu()
             obs = p.map(take_step, control_input)
-            obs = np.concatenate(obs)
-            assert obs.shape == (n_workers, batch_per_worker, 27+28)
-            output_cuda = obs.cuda()
+            obs = np.stack(obs)
+            if obs.shape != (n_workers, batch_per_worker, 74+73):
+                print(f"ERROR: obs.shape = {obs.shape}")
+                break
+            output_cuda = torch.from_numpy(obs).cuda()
     running_time = time.time()-s_time
     steps_per_s = 1000 * batch_per_worker * n_workers / running_time
     print('Num workers: {}'.format(n_workers))
@@ -49,13 +51,13 @@ def time_multicore(batch_per_worker=32, n_workers=1, control_size=21):
 if __name__ == '__main__':
     n_workers = 64
     results = []
-    for batch_per_worker in (1,2,4,8,16,32,64,128,256,512,1024):
+    for batch_per_worker in (1,2,4,8,16,32,64,128,256,512):
         results.append(time_multicore(batch_per_worker, n_workers=64))
     results_df = pd.DataFrame(results, columns=["batch_per_worker", "wallclock_time", "steps_per_second"])
     results_df['simulator'] = 'mujoco'
     results_df['parallellisation'] = 'synchronized_multiprocessing'
-    results_df['model'] = 'humanoid_mjx'
+    results_df['model'] = 'virtual_rodent_mjx_version'
     results_df['parition'] = 'local'
     results_df['control_inputs'] = '0.01*torch.randn'
     results_df['rendering'] = 'none'
-    results_df.to_csv('results/synchronized_multiprocessing_humanoid_mjx.csv')
+    results_df.to_csv('results/synchronized_multiprocessing_rodent_mjx.csv')
