@@ -1,0 +1,11 @@
+,batch_size,wallclock_time,steps_per_second,simulator,parallellisation,model,parition,control_inputs,rendering
+0,1,0.6987011432647705,143.12270841970746,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+1,2,1.0311081409454346,193.96607597008958,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+2,4,1.5198204517364502,263.1889836348665,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+3,8,2.4405155181884766,327.7995956337195,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+4,16,4.441603660583496,360.2302506635198,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+5,32,8.439363718032837,379.17550503983966,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+6,64,16.82442331314087,380.3993682803512,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+7,128,33.272462129592896,384.7025191627024,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+8,256,66.0519917011261,387.57347569223344,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none
+9,512,133.66754126548767,383.03988773390864,mjx,multiprocessing,virtual_rat_mjx_version,gpu_test,none,none

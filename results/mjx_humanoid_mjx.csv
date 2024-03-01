@@ -1,0 +1,15 @@
+,batch_size,wallclock_time,steps_per_second,simulator,parallellisation,model,parition,control_inputs,rendering
+0,1,0.07224035263061523,1384.267882956323,mjx,none,humanoid_mjx,gpu_test,none,none
+1,2,0.07694363594055176,2599.30529088233,mjx,none,humanoid_mjx,gpu_test,none,none
+2,4,0.0775907039642334,5155.256745503766,mjx,none,humanoid_mjx,gpu_test,none,none
+3,8,0.07602262496948242,10523.183069791947,mjx,none,humanoid_mjx,gpu_test,none,none
+4,16,0.07815670967102051,20471.690872540137,mjx,none,humanoid_mjx,gpu_test,none,none
+5,32,0.08727860450744629,36664.19757807869,mjx,none,humanoid_mjx,gpu_test,none,none
+6,64,0.0937659740447998,68255.03670384939,mjx,none,humanoid_mjx,gpu_test,none,none
+7,128,0.10397148132324219,123110.68224761974,mjx,none,humanoid_mjx,gpu_test,none,none
+8,256,0.12364315986633301,207047.4422335648,mjx,none,humanoid_mjx,gpu_test,none,none
+9,512,0.15938687324523926,321230.97064098594,mjx,none,humanoid_mjx,gpu_test,none,none
+10,1024,0.24145293235778809,424099.2188418004,mjx,none,humanoid_mjx,gpu_test,none,none
+11,2048,0.392120361328125,522288.6138999144,mjx,none,humanoid_mjx,gpu_test,none,none
+12,4096,0.7332746982574463,558590.1176917373,mjx,none,humanoid_mjx,gpu_test,none,none
+13,8192,1.4120433330535889,580152.1673052723,mjx,none,humanoid_mjx,gpu_test,none,none
