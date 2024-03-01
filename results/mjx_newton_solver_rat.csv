@@ -1,0 +1,11 @@
+,batch_size,wallclock_time,steps_per_second,simulator,parallellisation,model,parition,control_inputs,rendering,solver
+0,1,0.37940454483032227,263.5709069977591,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+1,2,0.4964780807495117,402.83752245027324,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+2,4,0.704439640045166,567.8272165012655,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+3,8,1.0526423454284668,759.9922266801537,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+4,16,1.8101754188537598,883.8922368160058,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+5,32,3.373394727706909,948.5993363650107,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+6,64,6.630621910095215,965.2186607497421,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+7,128,12.949516296386719,988.4539087820262,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+8,256,25.590917825698853,1000.354898341787,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton
+9,512,51.74320602416992,989.501886993315,mjx,none,virtual_rodent_mjx_version,gpu_test,none,none,newton

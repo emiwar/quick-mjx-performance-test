@@ -1,5 +1,6 @@
 import time
 import etils
+import os
 
 import jax
 import mujoco
@@ -7,12 +8,25 @@ from mujoco import mjx
 import tqdm
 import pandas as pd
 
-print("Loading model")
-#model = mujoco.MjModel.from_xml_path('ant.xml')
-path = etils.epath.Path(etils.epath.resource_path('mujoco')) / ('mjx/test_data/humanoid')
-model = mujoco.MjModel.from_xml_path((path / 'humanoid.xml').as_posix())
+import os
+os.environ['XLA_FLAGS'] = (
+    '--xla_gpu_enable_triton_softmax_fusion=true '
+    '--xla_gpu_triton_gemm_any=True '
+    '--xla_gpu_enable_async_collectives=true '
+    '--xla_gpu_enable_latency_hiding_scheduler=true '
+    '--xla_gpu_enable_highest_priority_async_stream=true '
+)
 
+print("Loading model")
+model = mujoco.MjModel.from_xml_path('rodent.xml')
+#path = etils.epath.Path(etils.epath.resource_path('mujoco')) / ('mjx/test_data/humanoid')
+#model = mujoco.MjModel.from_xml_path((path / 'humanoid.xml').as_posix())
+model.opt.solver = mujoco.mjtSolver.mjSOL_NEWTON
+model.opt.disableflags = mujoco.mjtDisableBit.mjDSBL_EULERDAMP
+model.opt.iterations = 1
+model.opt.ls_iterations = 4
 mjx_model = mjx.device_put(model)
+
 
 @jax.vmap
 def init_model(_):
@@ -40,13 +54,14 @@ def time_mjx(batch_size, n_sim_steps=100):
 
 if __name__ == '__main__':
     results = []
-    for batch_size in (1,2,4,8,16,32,64,128,256,512,1024,2048,4096,4096*2):
+    for batch_size in (1,2,4,8,16,32,64,128,256,512):#,2048,4096,4096*2):
         results.append(time_mjx(batch_size))
     results_df = pd.DataFrame(results, columns=["batch_size", "wallclock_time", "steps_per_second"])
     results_df['simulator'] = 'mjx'
     results_df['parallellisation'] = 'none'
-    results_df['model'] = 'humanoid_mjx'
+    results_df['model'] = 'virtual_rodent_mjx_version'
     results_df['parition'] = 'gpu_test'
     results_df['control_inputs'] = 'none'
     results_df['rendering'] = 'none'
-    results_df.to_csv('results/mjx_humanoid_mjx.csv')
+    results_df['solver'] = 'newton'
+    results_df.to_csv('results/mjx_newton_solver_rat.csv')

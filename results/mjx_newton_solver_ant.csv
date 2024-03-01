@@ -1,0 +1,15 @@
+,batch_size,wallclock_time,steps_per_second,simulator,parallellisation,model,parition,control_inputs,rendering,solver
+0,8192,2.0386271476745605,401839.0518023133,mjx,none,ant,gpu_test,none,none,newton
+1,4096,1.1403133869171143,359199.5013821341,mjx,none,ant,gpu_test,none,none,newton
+2,2048,0.6369216442108154,321546.61701559793,mjx,none,ant,gpu_test,none,none,newton
+3,1024,0.416593074798584,245803.41391778714,mjx,none,ant,gpu_test,none,none,newton
+4,512,0.32593226432800293,157087.85414528562,mjx,none,ant,gpu_test,none,none,newton
+5,256,0.23682951927185059,108094.63312981019,mjx,none,ant,gpu_test,none,none,newton
+6,128,0.22039389610290527,58077.833489651115,mjx,none,ant,gpu_test,none,none,newton
+7,64,0.21367692947387695,29951.759489235974,mjx,none,ant,gpu_test,none,none,newton
+8,32,0.20574188232421875,15553.469054770645,mjx,none,ant,gpu_test,none,none,newton
+9,16,0.2003183364868164,7987.286775942756,mjx,none,ant,gpu_test,none,none,newton
+10,8,0.1863548755645752,4292.884731758929,mjx,none,ant,gpu_test,none,none,newton
+11,4,0.19342708587646484,2067.9627063991757,mjx,none,ant,gpu_test,none,none,newton
+12,2,0.1916348934173584,1043.6512705670118,mjx,none,ant,gpu_test,none,none,newton
+13,1,0.20241427421569824,494.0363044428242,mjx,none,ant,gpu_test,none,none,newton

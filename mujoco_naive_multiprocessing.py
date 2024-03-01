@@ -1,11 +1,12 @@
 import multiprocessing
 import time
+import etils
 
 import mujoco
 import pandas as pd
 
 def run_steps(worker_id):
-    m = mujoco.MjModel.from_xml_path('humanoid.xml')
+    m = mujoco.MjModel.from_xml_path('humanoid_mjx.xml')
     d = mujoco.MjData(m)
     for i in range(100_000):
         #d.ctrl = np.random.normal(0, 0.01, m.nu)
@@ -30,8 +31,8 @@ if __name__ == '__main__':
     results_df = pd.DataFrame(results, columns=["n_workers", "wallclock_time", "steps_per_second"])
     results_df['simulator'] = 'mujoco'
     results_df['parallellisation'] = 'multiprocessing'
-    results_df['model'] = 'humanoid'
+    results_df['model'] = 'humanoid_mjx'
     results_df['parition'] = 'test'
     results_df['control_inputs'] = 'none'
     results_df['rendering'] = 'none'
-    results_df.to_csv('results/multiprocessing_humanoid.csv')
+    results_df.to_csv('results/multiprocessing_humanoid_mjx.csv')
