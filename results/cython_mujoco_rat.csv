@@ -1,0 +1,15 @@
+,batch_size,wallclock_time,steps_per_second,simulator,parallellisation,model,parition,control_inputs,rendering,solver
+0,1,0.18921899795532227,5284.881596488089,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+1,2,0.11305475234985352,17690.543373275465,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+2,4,0.11582469940185547,34534.948250734866,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+3,8,0.11816906929016113,67699.61080387462,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+4,16,0.12253046035766602,130579.77545580137,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+5,32,0.12964105606079102,246835.385119006,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+6,64,0.1422743797302246,449835.0308843688,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+7,128,0.26081085205078125,490777.1244697967,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+8,256,0.4984419345855713,513600.4461840691,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+9,512,0.9935648441314697,515316.1396804128,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+10,1024,2.2210450172424316,461044.23460599687,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+11,2048,5.0285749435424805,407272.4425893204,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+12,4096,10.949760437011719,374072.11085230217,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
+13,8192,22.682822704315186,361154.34603478835,mujoco_with_custom_bindings,none,virtual_rodent_mjx_version,test,none,none,default
