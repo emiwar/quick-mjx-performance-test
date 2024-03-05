@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 def time_cython_mujoco(batch_size, n_sim_steps=1000):
-    runner = cython_mujoco.MuJoCoRunner(b"humanoid_mjx.xml", batch_size)
+    runner = cython_mujoco.MuJoCoRunner(b"rodent.xml", batch_size)
     result = np.zeros((batch_size, runner.nq()))
     s_time = time.time()
     for t in range(n_sim_steps):
@@ -24,9 +24,10 @@ for n_envs in (1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192):
 results_df = pd.DataFrame(results, columns=["batch_size", "wallclock_time", "steps_per_second"])
 results_df['simulator'] = 'mujoco_with_custom_bindings'
 results_df['parallellisation'] = 'none'
-results_df['model'] = 'humanoid_mjx_version'
-results_df['parition'] = 'test'
+results_df['model'] = 'rodent_mjx_version'
+results_df['parition'] = 'olveczky'
 results_df['control_inputs'] = 'none'
 results_df['rendering'] = 'none'
 results_df['solver'] = 'default'
-results_df.to_csv('results/cython_mujoco_humanoid.csv')
+results_df['n_cores'] = 32
+results_df.to_csv('results/cython_mujoco_rodent_32_cores.csv')
