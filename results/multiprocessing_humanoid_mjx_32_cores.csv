@@ -1,0 +1,9 @@
+,n_workers,wallclock_time,steps_per_second,simulator,parallellisation,model,parition,control_inputs,rendering
+0,1,2.645792245864868,37795.86252710917,mujoco,multiprocessing,humanoid_mjx,olveczky,none,none
+1,2,2.6568615436553955,75276.78680795446,mujoco,multiprocessing,humanoid_mjx,olveczky,none,none
+2,4,2.655884027481079,150608.98588232865,mujoco,multiprocessing,humanoid_mjx,olveczky,none,none
+3,8,2.735283374786377,292474.2669715087,mujoco,multiprocessing,humanoid_mjx,olveczky,none,none
+4,16,2.6980414390563965,593022.7671223532,mujoco,multiprocessing,humanoid_mjx,olveczky,none,none
+5,32,2.8123323917388916,1137845.5866027307,mujoco,multiprocessing,humanoid_mjx,olveczky,none,none
+6,64,6.277162075042725,1019569.0223525795,mujoco,multiprocessing,humanoid_mjx,olveczky,none,none
+7,128,11.449497938156128,1117952.950351058,mujoco,multiprocessing,humanoid_mjx,olveczky,none,none
