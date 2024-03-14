@@ -6,7 +6,7 @@ import pandas as pd
 import itertools
 import time
 
-model_filename = 'humanoid_mjx.xml'
+model_filename = 'rodent.xml'
 model = mujoco.MjModel.from_xml_path(model_filename)
 data = mujoco.MjData(model)
 state_size = mujoco.mj_stateSize(model, mujoco.mjtState.mjSTATE_FULLPHYSICS)
@@ -40,4 +40,4 @@ for n_steps, n_envs in tqdm.tqdm(test_combinations, total=n_test_combinations):
 results_df = pd.DataFrame(results, columns=["model", "n_steps",
                                             "n_envs", "run_time"])
 results_df["steps_per_second"] = results_df.eval("n_steps * n_envs / run_time")
-results_df.to_csv(f"results/basic_mujoco_rollout_humanoid.csv")
+results_df.to_csv(f"results/basic_mujoco_rollout_rodent.csv")
