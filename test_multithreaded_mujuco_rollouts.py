@@ -8,14 +8,14 @@ import pandas as pd
 import itertools
 import time
 
-model_filename = 'rodent.xml'
+model_filename = 'humanoid_mjx.xml'
 model = mujoco.MjModel.from_xml_path(model_filename)
 data = mujoco.MjData(model)
 state_size = mujoco.mj_stateSize(model, mujoco.mjtState.mjSTATE_FULLPHYSICS)
 
 n_workers = 48
-n_steps_list = np.round(2**np.arange(0, 10.25, 0.25)).astype('int')
-n_envs_list = np.round(2**np.arange(0, 10.25, 0.25)).astype('int')
+n_steps_list = (1,2,4,5,1024)#np.round(2**np.arange(0, 10.25, 0.25)).astype('int')
+n_envs_list = np.round(2**np.arange(0, 16.25, 0.25)).astype('int')
 
 test_combinations = itertools.product(n_steps_list, n_envs_list)
 n_test_combinations = len(n_steps_list)*len(n_envs_list)
@@ -33,7 +33,7 @@ def call_rollout(initial_state, control, state, sensordata):
 for n_steps, n_envs in tqdm.tqdm(test_combinations, total=n_test_combinations):
     mujoco.mj_resetData(model, data)
     initial_state = np.zeros((n_envs, state_size))
-    control = np.random.normal(0, 0.01, (n_envs, n_steps, model.nu))#np.zeros((n_envs, n_steps, model.nu))
+    control = np.zeros((n_envs, n_steps, model.nu))#np.random.normal(0, 0.01, (n_envs, n_steps, model.nu))#
     state = np.empty((n_envs, n_steps, state_size))
     sensordata = np.empty((n_envs, n_steps, model.nsensordata))
     
@@ -65,4 +65,4 @@ for n_steps, n_envs in tqdm.tqdm(test_combinations, total=n_test_combinations):
 results_df = pd.DataFrame(results, columns=["model", "n_steps",
                                             "n_envs", "n_workers", "run_time"])
 results_df["steps_per_second"] = results_df.eval("n_steps * n_envs / run_time")
-results_df.to_csv(f"results/multithreaded_mujoco_rollout_rodent_with_control_input.csv")
+results_df.to_csv(f"results/multithreaded_mujoco_rollout_humanoid_large_nroll.csv")
