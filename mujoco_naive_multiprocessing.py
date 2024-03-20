@@ -6,7 +6,7 @@ import mujoco
 import pandas as pd
 
 def run_steps(worker_id):
-    m = mujoco.MjModel.from_xml_path('rodent.xml')
+    m = mujoco.MjModel.from_xml_path('rodent_stac_optimized.xml')
     d = mujoco.MjData(m)
     for i in range(100_000):
         #d.ctrl = np.random.normal(0, 0.01, m.nu)
@@ -31,8 +31,8 @@ if __name__ == '__main__':
     results_df = pd.DataFrame(results, columns=["n_workers", "wallclock_time", "steps_per_second"])
     results_df['simulator'] = 'mujoco'
     results_df['parallellisation'] = 'multiprocessing'
-    results_df['model'] = 'rodent_mjx'
+    results_df['model'] = 'rodent_mjx_optimized'
     results_df['parition'] = 'olveczky'
     results_df['control_inputs'] = 'none'
     results_df['rendering'] = 'none'
-    results_df.to_csv('results/multiprocessing_rodent_mjx_32_cores.csv')
+    results_df.to_csv('results/multiprocessing_rodent_mjx_optimized_48_cores.csv')
