@@ -54,14 +54,14 @@ def time_mjx(batch_size, n_sim_steps=100):
 
 if __name__ == '__main__':
     results = []
-    for batch_size in (1,2,4,8,16,32,64,128,256,512):#,2048,4096,4096*2):
+    for batch_size in (1,2,4,8,16,32,64,128,256,512):#,1024,2048,4096,4096*2):
         results.append(time_mjx(batch_size))
     results_df = pd.DataFrame(results, columns=["batch_size", "wallclock_time", "steps_per_second"])
     results_df['simulator'] = 'mjx'
     results_df['parallellisation'] = 'none'
-    results_df['model'] = 'virtual_rodent_mjx_version'
-    results_df['parition'] = 'gpu_test'
+    results_df['model'] = 'rodent_mjx'
+    results_df['parition'] = 'olveczkygpu'
     results_df['control_inputs'] = 'none'
     results_df['rendering'] = 'none'
     results_df['solver'] = 'newton'
-    results_df.to_csv('results/mjx_newton_solver_rat.csv')
+    results_df.to_csv('results/mjx_newton_solver_rodent_olveckygpu.csv')
