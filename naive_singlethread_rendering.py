@@ -19,5 +19,5 @@ def update_and_render(data):
     renderer.update_scene(data)
     renderer.render()
 
-for t in tqdm.trange(10000):
+for t in tqdm.trange(1000):
     update_and_render(data)
