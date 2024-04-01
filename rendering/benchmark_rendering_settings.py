@@ -4,8 +4,6 @@ import mujoco.rollout
 import tqdm
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import itertools
 import time
 
@@ -74,5 +72,5 @@ for setup in setups:
         result = setup.copy()
         result["fps"] = benchmark_rendering(**setup)
         results.append(result)
-pd.DataFrame(results).to_csv("results/feature_benchmarking_local.csv")
+pd.DataFrame(results).to_csv("results/feature_benchmarking_olveczkygpu.csv")
 
