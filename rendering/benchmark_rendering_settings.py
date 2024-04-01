@@ -7,11 +7,10 @@ import pandas as pd
 import itertools
 import time
 
-def benchmark_rendering(model_filename, camera, res, steps, backend="egl",
+def benchmark_rendering(model_filename, camera, res, steps,
                         visJoint=False, visSkin=False,
                         visFlexSkin=False, visTexture=True,
                         visFog=False, visShadow=False, visReflection=False):
-        os.environ['MUJOCO_GL'] = backend
         model = mujoco.MjModel.from_xml_path(model_filename)
         scene_option = mujoco.MjvOption()
         scene_option.flags[mujoco.mjtVisFlag.mjVIS_JOINT] = visJoint
@@ -38,9 +37,9 @@ def benchmark_rendering(model_filename, camera, res, steps, backend="egl",
 model_filename = '../rodent.xml'
 
 setups = [
-    dict(model_filename=model_filename, camera="side", res=256, steps=1024*8, backend="egl"),
-    dict(model_filename=model_filename, camera="egocentric", res=256, steps=1024*8, backend="egl"),
-    dict(model_filename=model_filename, camera="egocentric", res=64, steps=1024*8, backend="egl"),
+    dict(model_filename=model_filename, camera="side", res=256, steps=1024*8),
+    dict(model_filename=model_filename, camera="egocentric", res=256, steps=1024*8),
+    dict(model_filename=model_filename, camera="egocentric", res=64, steps=1024*8),
 ]
 
 features = [
@@ -70,7 +69,8 @@ for setup in setups:
     for feature_set in tqdm.tqdm(features, desc=f"{camera}, {res}x{res}"):
         setup.update(feature_set)
         result = setup.copy()
+        result["backend"] = os.environ['MUJOCO_GL']
         result["fps"] = benchmark_rendering(**setup)
         results.append(result)
-pd.DataFrame(results).to_csv("results/feature_benchmarking_olveczkygpu.csv")
+pd.DataFrame(results).to_csv("results/feature_benchmarking_local2.csv")
 

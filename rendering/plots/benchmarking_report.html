@@ -1,0 +1,1404 @@
+<html><head><title>Rendering benchmark</title><style>
+                    body {
+                        font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                    }
+                    td, th, tr {
+                        margin: 0px;
+                        padding: 6px;
+                    }
+                    tr:nth-child(odd) {
+                        background: #EEE
+                    }
+                    table {
+                        border-collapse: collapse;
+                    }
+                </style></head><body><h1>Side view</h1><img src="example_renderings_local_side_256x256.png" width="800"/><table><tr><th>Camera</th><th>Resolution</th>
+                  <th colspan="7" style="text-align:center">Included features</th>
+                  <th colspan="3" style="text-align:center">Frames / s</th></tr><tr><td><span style="writing-mode: sideways-lr;"></span></td><td><span style="writing-mode: sideways-lr;"></span></td><td><span style="writing-mode: sideways-lr;">Joints</span></td><td><span style="writing-mode: sideways-lr;">Skin</span></td><td><span style="writing-mode: sideways-lr;">FlexSkin</span></td><td><span style="writing-mode: sideways-lr;">Textures</span></td><td><span style="writing-mode: sideways-lr;">Fog</span></td><td><span style="writing-mode: sideways-lr;">Shadows</span></td><td><span style="writing-mode: sideways-lr;">Reflections</span></td><td style="text-align:left">Local desktop<br />GTX 1660<br /><em>glfw</em></td>
+              <td style="text-align:left">Local desktop<br />GTX 1660<br /><em>egl</em></td>
+              <td style="text-align:left">Cluster<br /><tt>olveczkygpu</tt><br />V100 16GB<br /><em>egl</em></td></tr><tbody><tr><td>side</td><td>256 x 256</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 43.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            870.25
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 25.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            517.46
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 20.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            400.02
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 44.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            897.67
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 28.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            560.84
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 22.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            454.22
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 44.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            894.85
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 28.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            569.67
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 22.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            450.09
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 87.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1747.02
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 41.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            832.50
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 31.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            625.76
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 89.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1797.06
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 41.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            838.11
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 30.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            618.33
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 120.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2418.78
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 66.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1319.65
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 49.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            979.22
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 96.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1922.90
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 52.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1057.08
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 38.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            768.18
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 146.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2933.98
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 99.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1982.43
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 66.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1325.23
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 84.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1697.84
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 41.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            835.08
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 31.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            620.34
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 51.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1029.56
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 44.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            893.53
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 35.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            714.52
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 47.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            957.90
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 42.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            854.06
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 36.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            720.81
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 46.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            935.90
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 45.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            915.31
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 36.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            722.56
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 47.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            949.99
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 43.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            861.42
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 36.2px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            723.11
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 47.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            958.60
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 43.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            871.94
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 35.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            709.60
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 133.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2672.81
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 91.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1833.87
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 67.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1347.77
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 123.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2474.17
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 87.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1757.16
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 65.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1313.92
+                        </td></tr><tr><td>side</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 142.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2853.68
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 91.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1838.72
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 68.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1360.95
+                        </td></tr></tbody></table><h1>Egocentric</h1><img src="example_renderings_local_egocentric_256x256.png" width="800"/><table><tr><th>Camera</th><th>Resolution</th>
+                  <th colspan="7" style="text-align:center">Included features</th>
+                  <th colspan="3" style="text-align:center">Frames / s</th></tr><tr><td><span style="writing-mode: sideways-lr;"></span></td><td><span style="writing-mode: sideways-lr;"></span></td><td><span style="writing-mode: sideways-lr;">Joints</span></td><td><span style="writing-mode: sideways-lr;">Skin</span></td><td><span style="writing-mode: sideways-lr;">FlexSkin</span></td><td><span style="writing-mode: sideways-lr;">Textures</span></td><td><span style="writing-mode: sideways-lr;">Fog</span></td><td><span style="writing-mode: sideways-lr;">Shadows</span></td><td><span style="writing-mode: sideways-lr;">Reflections</span></td><td style="text-align:left">Local desktop<br />GTX 1660<br /><em>glfw</em></td>
+              <td style="text-align:left">Local desktop<br />GTX 1660<br /><em>egl</em></td>
+              <td style="text-align:left">Cluster<br /><tt>olveczkygpu</tt><br />V100 16GB<br /><em>egl</em></td></tr><tbody><tr><td>egocentric</td><td>256 x 256</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 40.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            812.70
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 30.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            607.48
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 25.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            500.93
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 40.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            815.37
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 33.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            672.15
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 27.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            540.97
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 41.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            828.90
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 33.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            669.36
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 26.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            538.90
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 98.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1962.16
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 54.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1094.21
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 42.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            847.36
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 100.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2017.09
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 56.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1134.56
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 42.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            848.05
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 156.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            3134.57
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 93.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1876.04
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 74.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1496.87
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 110.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2214.14
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 63.2px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1263.87
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            999.97
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 179.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            3586.03
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 127.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2546.80
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 103.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2065.05
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 99.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1995.31
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 57.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1142.62
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 43.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            866.35
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 56.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1130.41
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1002.59
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 45.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            899.32
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 49.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            981.09
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1006.44
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 45.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            902.47
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1002.78
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 51.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1025.91
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 46.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            920.05
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1005.54
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 53.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1074.59
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 46.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            933.70
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 48.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            969.84
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1010.59
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 46.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            933.16
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 166.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            3330.49
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 127.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2539.61
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 103.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2060.34
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 163.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            3261.49
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 117.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2341.74
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 92.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1847.21
+                        </td></tr><tr><td>egocentric</td><td>256 x 256</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 172.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            3446.39
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 129.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2580.60
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 104.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2092.43
+                        </td></tr></tbody></table><h1>Egocentric, low-res</h1><img src="example_renderings_local_egocentric_64x64.png" width="800"/><table><tr><th>Camera</th><th>Resolution</th>
+                  <th colspan="7" style="text-align:center">Included features</th>
+                  <th colspan="3" style="text-align:center">Frames / s</th></tr><tr><td><span style="writing-mode: sideways-lr;"></span></td><td><span style="writing-mode: sideways-lr;"></span></td><td><span style="writing-mode: sideways-lr;">Joints</span></td><td><span style="writing-mode: sideways-lr;">Skin</span></td><td><span style="writing-mode: sideways-lr;">FlexSkin</span></td><td><span style="writing-mode: sideways-lr;">Textures</span></td><td><span style="writing-mode: sideways-lr;">Fog</span></td><td><span style="writing-mode: sideways-lr;">Shadows</span></td><td><span style="writing-mode: sideways-lr;">Reflections</span></td><td style="text-align:left">Local desktop<br />GTX 1660<br /><em>glfw</em></td>
+              <td style="text-align:left">Local desktop<br />GTX 1660<br /><em>egl</em></td>
+              <td style="text-align:left">Cluster<br /><tt>olveczkygpu</tt><br />V100 16GB<br /><em>egl</em></td></tr><tbody><tr><td>egocentric</td><td>64 x 64</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 41.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            832.59
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 32.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            657.53
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 26.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            519.04
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 40.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            818.16
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 34.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            698.65
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 28.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            567.63
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 41.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            819.32
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 35.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            713.63
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 28.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            571.43
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 116.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2322.71
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 59.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1195.47
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 45.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            916.50
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 123.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2474.09
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 61.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1225.95
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 45.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            916.83
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 213.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            4274.14
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 106.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2130.57
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 85.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1710.22
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 134.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2694.77
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 70.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1407.35
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 54.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1082.55
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 252.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            5042.54
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 158.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            3178.47
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 124.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2479.61
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 123.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2466.44
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 61.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1234.52
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 46.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            930.84
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 60.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1202.07
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 55.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1113.79
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 48.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            968.71
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 52.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1056.14
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 55.2px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1103.51
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.2px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1003.97
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 49.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            998.84
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 54.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1094.59
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 48.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            972.27
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 52.8px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1056.69
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 49.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            997.14
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.3px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1005.94
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 53.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1061.80
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 54.6px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            1092.77
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 50.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            999.27
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 241.0px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            4820.94
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 158.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            3167.93
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 123.7px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2474.96
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 233.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            4669.14
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 141.5px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2829.05
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 111.1px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2221.47
+                        </td></tr><tr><td>egocentric</td><td>64 x 64</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 238.9px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            4778.13
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 160.4px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            3208.89
+                        </td><td style="text-align:left">
+                            <div style='display: inline-block;
+                                        background-color: darkblue;
+                                        width: 125.2px;
+                                        height: 15px;
+                                        margin-right: 2px;
+                                        margin-top: 2px;
+                                        margin-bottom: 0px;'></div>
+                            2504.26
+                        </td></tr></tbody></table></body></html>
